@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style type="text/css">
+    .about-magic{
+    position: relative;
+    max-width: 800px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* top: 50%;
+    left: 20%;*/
+    /* transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: center;
+  }
+  .myRightctn{
+    position: relative;
+    background: rgba(118, 75, 183, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(118, 75, 183, 1.0), rgba(173, 78, 221, 1.0));
+    background: -moz-linear-gradient(top left, rgba(118, 75, 183, 1.0), rgba(173, 78, 221, 1.0));
+    background: linear-gradient(to bottom right, rgba(118, 75, 183, 1.0), rgba(173, 78, 221, 1.0));
+    box-shadow: 2.5px 4.33px 15px 0px rgb(138,43,226);
+    z-index: 1;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    color: rgb(192,192,192,);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .myRightctn p{
+      color: rgb(255, 255, 255);
+  }
+  .myleftctn{
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    /* padding-left: 4vw; */
+    text-align: center;
+  }
+  .myleftctn header{
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .row-magic{
+    height: 100%;
+  }
+  .mycard{
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+    box-shadow:  0px 10px 40px -10px rgba(0,0,0,0.7);
+  }
+  .myRightctn header{
+    color: #fff;
+    font-size: 44px;
+  }
+  .box{
+    position: relative;
+    margin: 20px;
+    margin-bottom: 100px;
+  }
+  .myleftctn .myInput{
+    width: auto;
+    border-radius: 25px;
+    padding: 10px;
+    /* padding-left: 50px; */
+    /* margin-top: 15px; */
+    border:none;
+    /* -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7); */
+  }
+
+  .myInputDiv{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    /* padding: 10px; */
+    margin-top: 15px;
+    background: white;
+    border:none;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+  }
+  .myleftctn .myInput:focus{
+    outline: none;
+  }
+  .myform{
+    position: relative;
+    margin-top: 50px;
+  }
+  .myleftctn .butt{
+    background: linear-gradient(45deg,#bb36fd,#9b00e8);
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
+  }
+  .myleftctn .butt:hover{
+    background: linear-gradient(45deg,#c85bff,#b726ff);
+  }
+  .myleftctn .butt:focus{
+    outline: none;
+  }
+  .myleftctn .bi{
+    /* position: relative; */
+    color: #bb36fd;
+    /* left:45px; */
+  }
+  .butt_out{
+    background: transparent;
+    color:#fff;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
+  }
+  .butt_out:hover{
+    border: 2px solid #eecbff;
+  }
+  .butt_out:focus{
+    outline: none;
+  }
+  .text-magic{
+    margin-left: 8px; 
+  }
+  .textarea-magic{
+    resize: none;
+  }
+    @media (max-width: 767px) {
+        .about-magic{
+            margin-bottom: 100%;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid about-magic">
+    <div class="mycard">
+      <div class="row row-magic">
+        <div class="col-md-6">
+          <div class="myleftctn">
+            <form class="myform text-center">
+              <header>Get in touch</header>
+              <div class="form-group myInputDiv">
+                <span class="input-group-addon">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input type="text" class="myInput" placeholder="Name" id="username" required="">
+                <div class="invalid-feedback">Please Fill Out This Field</div>
+              </div>
+
+              <div class="form-group myInputDiv">
+                <span class="input-group-addon"><i class="bi bi-envelope-fill"></i></span>
+                <input type="text" class="myInput" placeholder="Email" id="email" required="">
+              </div>
+
+              <div class="form-group myInputDiv">
+
+                <textarea class="myInput textarea-magic" rows="3" id="comment" name="text" placeholder="Comment"></textarea>
+              </div>
+
+              <div class="form-group" style="margin-top:15px">
+                <label><input id="check_1" name="check_1" type="checkbox" required=""><small class="text-magic">I Read And Agree To Terms &amp; Conditions</small><div class="invalid-feedback">You must check the box.</div></label>
+              </div>
+
+              <input type="submit" class="butt" value="SUBMIT">
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="myRightctn">
+            <div class="box"><header>Hello World!</header>
+            
+              <p>Being a professional is all about the way in which you approach your work. It is the amount of effort that you put into educating yourself and knowing your gear like an athlete knows theirs....!!</p>
+              <input type="button" class="butt_out" value="Learn More..!!">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
